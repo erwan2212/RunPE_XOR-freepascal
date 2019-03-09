@@ -1,0 +1,10 @@
+backup
+lib
+*.ppu
+*.dcu
+*.compiled
+*.o
+*.a
+*.exe
+*.xor
+*.~*
