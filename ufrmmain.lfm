@@ -9,6 +9,7 @@ object frmMain: TfrmMain
   ClientHeight = 152
   ClientWidth = 479
   Color = clBtnFace
+  DesignTimePPI = 120
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
@@ -16,8 +17,8 @@ object frmMain: TfrmMain
   LCLVersion = '1.8.2.0'
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 23
-    Top = 129
+    Height = 28
+    Top = 124
     Width = 479
     Panels = <>
   end
@@ -48,7 +49,7 @@ object frmMain: TfrmMain
     TabOrder = 3
   end
   object OpenDialog1: TOpenDialog
-    Filter = '*.xor|*.xor|*.exe|*.exe'
+    Filter = '*.encrypted|*.encrypted|*.exe|*.exe'
     left = 32
     top = 16
   end

